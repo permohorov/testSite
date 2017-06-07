@@ -1,2 +1,417 @@
+$main_color: #44c0c2
+$text_color: #5a5d65
+
 body
-	background-color: pink
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	margin: 0
+
+#navigation
+	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 1
+	
+.main_head
+	min-height: 100px	
+	min-width: 620px
+	padding: 0 135px
+	background-color: #fff
+	.logo
+		width: 120px
+		height: 100px
+		font-family: 'Lobster Two'
+		font-size: 40px
+		color: $main_color
+		line-height: 90px
+		float: left
+	.pages
+		.main_menu
+			list-style: none
+			margin: 0
+			padding: 0
+			float: right
+			text-align: center
+			vertical-align: middle
+			height: 100px
+			li
+				float: left
+				padding: 44px 25px 37px
+				vertical-align: middle
+				&:hover
+					background-color: #f8f9fb
+					border-bottom: 3px solid $main_color
+				a
+					display: block
+					text-decoration: none
+					color: $text_color
+					font-size: 14px
+					font-family: 'Open Sans', sans-serif
+
+.s-home
+	padding-top: 100px
+	.container
+		height: 565px
+		width: 100%
+		background: url(img/0.jpg) no-repeat center center fixed
+		background-size: 100% 100%
+		text-align: center
+		.main-text
+			display: inline-block
+			margin-top: 50px
+			text-align: center
+			h1
+				display: inline-block
+				color: #fff
+				font-size: 42px
+				font-weight: 300
+				font-family: 'Open Sans', sans-serif
+			h3
+				display: block
+				margin: 0 auto 20px
+				width: 330px
+				color: #fff
+				font-size: 18px
+				font-weight: 300
+				font-family: 'Open Sans', sans-serif
+			button
+				display: block
+				margin: 50px auto 0
+				width: 200px
+				height: 50px
+				background-color: transparent
+				border: 2px solid #fff
+				border-radius: 5px
+				color: #fff
+				font-size: 18px
+		.prev, .next
+			position: absolute
+			font-size: 24px
+			border: 1px solid #fff
+			border-radius: 50%
+			background-color: #fff
+			width: 40px
+			height: 40px
+		.prev	
+			top: 330px
+			left: 135px
+			.d-prev
+				width: 15px
+				height: 15px
+				background-color: transparent
+				border: 2px solid black
+				border-top: none
+				border-right: none
+				transform: rotate(45deg)
+				border-color: $main_color
+				margin: auto
+				position: relative
+				top: 11px
+				left: 4px
+		.next
+			top: 330px
+			right: 135px
+			.d-next
+				width: 15px
+				height: 15px
+				background-color: transparent
+				border: 2px solid black
+				border-top: none
+				border-right: none
+				transform: rotate(225deg)
+				border-color: $main_color
+				margin: auto
+				position: relative
+				top: 11px
+				right: 4px
+
+.content
+	min-height: 800px
+	width: 100%
+	.nameTeam
+		text-align: center
+		padding: 110px 0 100px
+		font-size: 24px
+		font-family: 'Open Sans', sans-serif
+		color: $text_color
+		h1
+			margin: 0	
+			font-weight: 300
+	.myTeam
+		margin-bottom: 20px
+		padding: 0 135px 0
+		ul
+			padding: 0
+			list-style: none
+			text-align: center 
+			&:after
+				width: 100%
+				height: 0
+				visibility: hidden
+				overflow: hidden
+				content: ""
+				display: inline-block
+			li
+				display: inline-block
+				height: 200px
+				margin: 20px 10px 0 0
+				.photo
+					width: 200px
+					height: 200px
+					border: 1px solid transparent
+					border-radius: 50%
+					background-color: #eeeef0
+					position: relative
+					&:hover
+						.plus
+							display: block
+					.plus
+						top: 37%
+						left: 38%
+						width: 50px
+						height: 50px
+						margin: 0
+						position: absolute
+						display: none
+						.horis
+							width: 50px
+							height: 15px
+							background-color: #000
+							position: absolute
+							top: 17px
+							background-color: red
+						.vertical
+							height: 50px
+							width: 15px
+							background-color: #000
+							position: absolute
+							left: 17px
+							background-color: red
+				.about
+					display: inline-block
+					width: 202px
+					margin-top: 75px
+					text-align: center
+					text-align-last: center
+					color: $text_color
+					font-family: 'Open Sans', sans-serif
+					font-weight: 300
+					margin-right: 30px
+					h1
+						display: inline-block
+						font-size: 24px
+						font-family: 'Open Sans', sans-serif
+						font-weight: 300
+					p
+						display: inline-block
+						margin-top: 10px
+						font-size: 14px
+					.text
+						margin-top: 20px
+						font-size: 12px
+						height: 50px
+						width: 220px
+						line-height: 1.5
+						text-align: justify
+
+#service
+	min-height: 740px
+	padding: 0 135px
+	background-color: #eeeef0
+	padding: 0
+	text-align: center
+	.product
+		display: inline-block
+		margin-top: 120px
+		min-height: 520px
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+			.product-cards
+				display: inline-block
+				width: 370px
+				height: 100%
+				margin-bottom: 20px
+				&:nth-child(2)
+					margin: 0 30px 20px
+				.product-name
+					height: 75px
+					background-color: #485460
+					p
+						display: inline-block
+						color: #fff
+						font-size: 30px
+						font-family: 'Open Sans', sans-serif
+						font-weight: 200
+						margin: 17px 
+				.product-price
+					height: 70px
+					background-color: #f8f9fb
+					p
+						display: inline-block
+						color: $text-color
+						font-size: 20px
+						font-family: 'Open Sans', sans-serif
+						font-weight: 200
+						margin: 21px
+				.product-about
+					li
+						height: 45px
+						border-top: 1px solid #eeeef0
+						background-color: #fff
+						&:last-child
+							border-bottom: 1px solid #eeeef0
+						p
+							display: inline-block
+							color: $text-color
+							font-size: 14px
+							font-family: 'Open Sans', sans-serif
+							font-weight: 200	
+				.product-buy
+					height: 100px
+					background-color: #f8f9fb
+					.buy-now
+						height: 40px
+						width: 170px
+						background-color: #485460
+						color: #fff
+						border: none
+						border-radius: 5px
+						margin: 30px
+						font-weight: 500
+						span
+							display: inline-block
+							font-weight: bold
+							font-size: 16px
+							margin: 0
+.active
+	background-color: #44c0c2!important
+
+#contact
+	min-height: 690px
+	width: 100%
+	background: url(img/bg.jpg) no-repeat center center
+	background-size: 100% 100%
+	text-align: center
+	position: relative
+	.contact-wraper
+		display: inline-block
+		height: 100%
+		padding: 0 135px 
+		.text
+			margin: 100px 0 
+			padding: 0
+			h1
+				font-size: 32px
+				color: #fff
+				z-index: 1000
+				font-family: 'Open Sans', sans-serif
+				font-weight: 200
+				margin: 0	
+		.contact-inform
+			list-style: none
+			height: 340px
+			padding: 0
+			margin: 0
+			.footer-text
+				display: inline-block
+				height: 100%
+				margin-bottom: 50px
+				width: 45%
+				float: left
+				.contact-text
+					color: #fff
+					text-align: left
+					font-size: 14px
+					font-family: 'Open Sans', sans-serif
+					h1
+						font-weight: 400
+						margin: 0 0 10px 0
+					p
+						display: inline-block
+						width: 80%
+						margin: 0
+				.socialIcons
+					width: 200px
+					height: 50px
+					padding: 0
+					margin: 50px 0 0 0
+					.social
+						display: inline-block
+						width: 50px
+						height: 50px
+						margin-right: 10px
+						background:url(img/SocialIcons.png) no-repeat
+						vertical-align: middle
+					.facebook
+						background-position: -8px -4px
+						background-size: 550%
+					.twitter
+						background-position: -164px -4px
+						background-size: 550%
+					.gmail
+						background-position: -60px -4px
+						background-size: 550%
+				.some-text
+					margin-top: 40px
+					p
+						color: #fff
+						text-align: left
+						font-family: 'Open Sans', sans-serif	
+						margin: 0 0 5px 0									
+			.form
+				display: inline-block
+				height: 100%
+				padding: 0
+				margin: 0	
+				width: 45%		
+				.error
+					border-color: red!important
+				.forms
+					display: inline-block
+					border-radius: 4px
+					border: 2px solid transparent
+				.first
+					float: left
+					height: 40px
+					width: 45%
+				.second
+					float: right
+					width: 45%
+					height: 40px
+				.third
+					margin-top: 30px
+					width: 97%
+					height: 180px
+					display: inline-block
+					border-radius: 4px
+					border: 2px solid transparent
+					padding: 10px 0 0 10px
+					float: right
+					resize: none
+				.send
+					width: 25%
+					height: 50px
+					color: #fff
+					background-color: $main_color
+					display: inline-block
+					border-radius: 4px
+					border: 2px solid transparent
+					float: right
+					margin-top: 10px
+
+label
+	display: none!important
+
+	
+
+							
+
+
+
+				
