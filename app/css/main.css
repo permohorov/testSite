@@ -1,0 +1,421 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  margin: 0; }
+
+#navigation {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.main_head {
+  min-height: 100px;
+  min-width: 620px;
+  padding: 0 135px;
+  background-color: #fff; }
+  .main_head .logo {
+    width: 120px;
+    height: 100px;
+    font-family: 'Lobster Two';
+    font-size: 40px;
+    color: #44c0c2;
+    line-height: 90px;
+    float: left; }
+  .main_head .pages .main_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px; }
+    .main_head .pages .main_menu li {
+      float: left;
+      padding: 44px 25px 37px;
+      vertical-align: middle; }
+      .main_head .pages .main_menu li:hover {
+        background-color: #f8f9fb;
+        border-bottom: 3px solid #44c0c2; }
+      .main_head .pages .main_menu li a {
+        display: block;
+        text-decoration: none;
+        color: #5a5d65;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif; }
+
+.s-home {
+  padding-top: 100px; }
+  .s-home .container {
+    height: 565px;
+    width: 100%;
+    background: url(img/0.jpg) no-repeat center center fixed;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    text-align: center; }
+    .s-home .container .main-text {
+      display: inline-block;
+      margin-top: 50px;
+      text-align: center; }
+      .s-home .container .main-text h1 {
+        display: inline-block;
+        color: #fff;
+        font-size: 42px;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif; }
+      .s-home .container .main-text h3 {
+        display: block;
+        margin: 0 auto 20px;
+        width: 330px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif; }
+      .s-home .container .main-text button {
+        display: block;
+        margin: 50px auto 0;
+        width: 200px;
+        height: 50px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        color: #fff;
+        font-size: 18px; }
+    .s-home .container .prev, .s-home .container .next {
+      position: absolute;
+      font-size: 24px;
+      border: 1px solid #fff;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #fff;
+      width: 40px;
+      height: 40px; }
+    .s-home .container .prev {
+      top: 330px;
+      left: 135px; }
+      .s-home .container .prev .d-prev {
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        border: 2px solid black;
+        border-top: none;
+        border-right: none;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        border-color: #44c0c2;
+        margin: auto;
+        position: relative;
+        top: 11px;
+        left: 4px; }
+    .s-home .container .next {
+      top: 330px;
+      right: 135px; }
+      .s-home .container .next .d-next {
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        border: 2px solid black;
+        border-top: none;
+        border-right: none;
+        -webkit-transform: rotate(225deg);
+            -ms-transform: rotate(225deg);
+                transform: rotate(225deg);
+        border-color: #44c0c2;
+        margin: auto;
+        position: relative;
+        top: 11px;
+        right: 4px; }
+
+.content {
+  min-height: 800px;
+  width: 100%; }
+  .content .nameTeam {
+    text-align: center;
+    padding: 110px 0 100px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5d65; }
+    .content .nameTeam h1 {
+      margin: 0;
+      font-weight: 300; }
+  .content .myTeam {
+    margin-bottom: 20px;
+    padding: 0 135px 0; }
+    .content .myTeam ul {
+      padding: 0;
+      list-style: none;
+      text-align: center; }
+      .content .myTeam ul:after {
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: "";
+        display: inline-block; }
+      .content .myTeam ul li {
+        display: inline-block;
+        height: 200px;
+        margin: 20px 10px 0 0; }
+        .content .myTeam ul li .photo {
+          width: 200px;
+          height: 200px;
+          border: 1px solid transparent;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          background-color: #eeeef0;
+          position: relative; }
+          .content .myTeam ul li .photo:hover .plus {
+            display: block; }
+          .content .myTeam ul li .photo .plus {
+            top: 37%;
+            left: 38%;
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            position: absolute;
+            display: none; }
+            .content .myTeam ul li .photo .plus .horis {
+              width: 50px;
+              height: 15px;
+              background-color: #000;
+              position: absolute;
+              top: 17px;
+              background-color: red; }
+            .content .myTeam ul li .photo .plus .vertical {
+              height: 50px;
+              width: 15px;
+              background-color: #000;
+              position: absolute;
+              left: 17px;
+              background-color: red; }
+        .content .myTeam ul li .about {
+          display: inline-block;
+          width: 202px;
+          margin-top: 75px;
+          text-align: center;
+          -moz-text-align-last: center;
+               text-align-last: center;
+          color: #5a5d65;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 300;
+          margin-right: 30px; }
+          .content .myTeam ul li .about h1 {
+            display: inline-block;
+            font-size: 24px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300; }
+          .content .myTeam ul li .about p {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px; }
+          .content .myTeam ul li .about .text {
+            margin-top: 20px;
+            font-size: 12px;
+            height: 50px;
+            width: 220px;
+            line-height: 1.5;
+            text-align: justify; }
+
+#service {
+  min-height: 740px;
+  padding: 0 135px;
+  background-color: #eeeef0;
+  padding: 0;
+  text-align: center; }
+  #service .product {
+    display: inline-block;
+    margin-top: 120px;
+    min-height: 520px; }
+    #service .product ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      #service .product ul .product-cards {
+        display: inline-block;
+        width: 370px;
+        height: 100%;
+        margin-bottom: 20px; }
+        #service .product ul .product-cards:nth-child(2) {
+          margin: 0 30px 20px; }
+        #service .product ul .product-cards .product-name {
+          height: 75px;
+          background-color: #485460; }
+          #service .product ul .product-cards .product-name p {
+            display: inline-block;
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 200;
+            margin: 17px; }
+        #service .product ul .product-cards .product-price {
+          height: 70px;
+          background-color: #f8f9fb; }
+          #service .product ul .product-cards .product-price p {
+            display: inline-block;
+            color: #5a5d65;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 200;
+            margin: 21px; }
+        #service .product ul .product-cards .product-about li {
+          height: 45px;
+          border-top: 1px solid #eeeef0;
+          background-color: #fff; }
+          #service .product ul .product-cards .product-about li:last-child {
+            border-bottom: 1px solid #eeeef0; }
+          #service .product ul .product-cards .product-about li p {
+            display: inline-block;
+            color: #5a5d65;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 200; }
+        #service .product ul .product-cards .product-buy {
+          height: 100px;
+          background-color: #f8f9fb; }
+          #service .product ul .product-cards .product-buy .buy-now {
+            height: 40px;
+            width: 170px;
+            background-color: #485460;
+            color: #fff;
+            border: none;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+            margin: 30px;
+            font-weight: 500; }
+            #service .product ul .product-cards .product-buy .buy-now span {
+              display: inline-block;
+              font-weight: bold;
+              font-size: 16px;
+              margin: 0; }
+
+.active {
+  background-color: #44c0c2 !important; }
+
+#contact {
+  min-height: 690px;
+  width: 100%;
+  background: url(img/bg.jpg) no-repeat center center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  text-align: center;
+  position: relative; }
+  #contact .contact-wraper {
+    display: inline-block;
+    height: 100%;
+    padding: 0 135px; }
+    #contact .contact-wraper .text {
+      margin: 100px 0;
+      padding: 0; }
+      #contact .contact-wraper .text h1 {
+        font-size: 32px;
+        color: #fff;
+        z-index: 1000;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        margin: 0; }
+    #contact .contact-wraper .contact-inform {
+      list-style: none;
+      height: 340px;
+      padding: 0;
+      margin: 0; }
+      #contact .contact-wraper .contact-inform .footer-text {
+        display: inline-block;
+        height: 100%;
+        margin-bottom: 50px;
+        width: 45%;
+        float: left; }
+        #contact .contact-wraper .contact-inform .footer-text .contact-text {
+          color: #fff;
+          text-align: left;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif; }
+          #contact .contact-wraper .contact-inform .footer-text .contact-text h1 {
+            font-weight: 400;
+            margin: 0 0 10px 0; }
+          #contact .contact-wraper .contact-inform .footer-text .contact-text p {
+            display: inline-block;
+            width: 80%;
+            margin: 0; }
+        #contact .contact-wraper .contact-inform .footer-text .socialIcons {
+          width: 200px;
+          height: 50px;
+          padding: 0;
+          margin: 50px 0 0 0; }
+          #contact .contact-wraper .contact-inform .footer-text .socialIcons .social {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            background: url(img/SocialIcons.png) no-repeat;
+            vertical-align: middle; }
+          #contact .contact-wraper .contact-inform .footer-text .socialIcons .facebook {
+            background-position: -8px -4px;
+            -webkit-background-size: 550% 550%;
+                    background-size: 550%; }
+          #contact .contact-wraper .contact-inform .footer-text .socialIcons .twitter {
+            background-position: -164px -4px;
+            -webkit-background-size: 550% 550%;
+                    background-size: 550%; }
+          #contact .contact-wraper .contact-inform .footer-text .socialIcons .gmail {
+            background-position: -60px -4px;
+            -webkit-background-size: 550% 550%;
+                    background-size: 550%; }
+        #contact .contact-wraper .contact-inform .footer-text .some-text {
+          margin-top: 40px; }
+          #contact .contact-wraper .contact-inform .footer-text .some-text p {
+            color: #fff;
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0 0 5px 0; }
+      #contact .contact-wraper .contact-inform .form {
+        display: inline-block;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        width: 45%; }
+        #contact .contact-wraper .contact-inform .form .error {
+          border-color: red !important; }
+        #contact .contact-wraper .contact-inform .form .forms {
+          display: inline-block;
+          -webkit-border-radius: 4px;
+                  border-radius: 4px;
+          border: 2px solid transparent; }
+        #contact .contact-wraper .contact-inform .form .first {
+          float: left;
+          height: 40px;
+          width: 45%; }
+        #contact .contact-wraper .contact-inform .form .second {
+          float: right;
+          width: 45%;
+          height: 40px; }
+        #contact .contact-wraper .contact-inform .form .third {
+          margin-top: 30px;
+          width: 97%;
+          height: 180px;
+          display: inline-block;
+          -webkit-border-radius: 4px;
+                  border-radius: 4px;
+          border: 2px solid transparent;
+          padding: 10px 0 0 10px;
+          float: right;
+          resize: none; }
+        #contact .contact-wraper .contact-inform .form .send {
+          width: 25%;
+          height: 50px;
+          color: #fff;
+          background-color: #44c0c2;
+          display: inline-block;
+          -webkit-border-radius: 4px;
+                  border-radius: 4px;
+          border: 2px solid transparent;
+          float: right;
+          margin-top: 10px; }
+
+label {
+  display: none !important; }
